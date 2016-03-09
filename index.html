@@ -4,9 +4,217 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+  <body class="page">
+    <header class="page-header">
+      <div class="main-header">
+        <div class="container">
+          <a class="logo" href="index.html">
+            <img src="http://placehold.it/150x100" alt="HTML Academy: Пинк">
+          </a>
+          <button class="main-header__toggle" type="button" name="Кнопка меню"></button>
+          <nav class="main-nav">
+            <a class="main-nav__item" href="index.html">Главная</a>
+            <a class="main-nav__item" href="photo.html">Фотографии</a>
+            <a class="main-nav__item" href="form.html">Конкурс</a>
+            <a class="main-nav__item" href="https://htmlacademy.ru/">HTML academy</a>
+          </nav>
+        </div>
+      </div>
+      <div class="page-header__intro--main">
+        <b class="page-header__text">Взгляните на жизнь иначе!</b>
+      </div>
+      <div class="download">
+        <div class="container">
+          <a class="btn  download__btn" href="http://www.apple.com/ru/itunes/download/">Скачать приложение</a>
+          <div class="download-icons">
+            <a class="download-icons__icon  download-icons__icon--apple"
+            href="http://www.apple.com/ru/itunes/download/" title="Download for Apple">Apple</a>
+            <a class="download-icons__icon  download-icons__icon--android"
+            href="https://play.google.com/store/apps" title="Download for Android">Android</a>
+            <a class="download-icons__icon  download-icons__icon--windows"
+            href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" title="Download for Windows">Windows</a>
+          </div>
+          <p class="download__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, iOS X, Windows 8
+          </p>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__intro">
+        <div class="container">
+          <p class="page-main__intro-text--main">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="page-main__intro-text--main">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="container">
+          <div class="info__items">
+            <div class="info__item">
+              <h2 class="info__item-title">Поднимает настроение</h2>
+              <p>
+                Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+              </p>
+            </div>
+            <div class="info__item">
+              <h2 class="info__item-title">Меняет мир вокруг</h2>
+              <p>
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </div>
+            <div class="info__item">
+              <h2 class="info__item-title">Заводит новых друзей</h2>
+              <p>
+                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="container">
+          <div class="slider">
+            <div class="slider__slides">
+              <div class="slider__slide  slider__slide--active">
+                <h2 class="slider__slide-title">Николай Петров</h2>
+                <p class="slider__slide-text">
+                  «Это приложение перевернуло мой мир
+                  и позволило по-новому взглянуть на
+                  привычные серые вещи! А еще я
+                  познакомился со своей будущей женой
+                  в комментариях к выложенной
+                  фотографии!»
+                </p>
+              </div>
+              <div class="slider__slide">
+                <h2 class="slider__slide-title">Николай Петров</h2>
+                <p class="slider__slide-text">
+                  «Это приложение перевернуло мой мир
+                  и позволило по-новому взглянуть на
+                  привычные серые вещи! А еще я
+                  познакомился со своей будущей женой
+                  в комментариях к выложенной
+                  фотографии!»
+                </p>
+              </div>
+              <div class="slider__slide">
+                <h2 class="slider__slide-title">Николай Петров</h2>
+                <p class="slider__slide-text">
+                  «Это приложение перевернуло мой мир
+                  и позволило по-новому взглянуть на
+                  привычные серые вещи! А еще я
+                  познакомился со своей будущей женой
+                  в комментариях к выложенной
+                  фотографии!»
+                </p>
+              </div>
+            </div>
+            <div class="slider__controls">
+              <i class="slider__controls-item  slider__controls-item--active"></i>
+              <i class="slider__controls-item"></i>
+              <i class="slider__controls-item"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="price">
+        <div class="slider slider--price">
+          <div class="price__table">
+            <table class="price-table">
+              <tr class="price-table__string--first">
+                <td class="price-table__header">
+                  <h3 class="price-table__title">База</h3>
+                  <span class="price-table__cost">1,99 USD</span>
+                </td>
+                <td class="price-table__header  price-table__header--hit">
+                  <h3 class="price-table__title">Стандарт</h3>
+                  <span class="price-table__cost">3,99 USD</span>
+                </td>
+                <td class="price-table__header">
+                  <h3 class="price-table__title">Анлим</h3>
+                  <span class="price-table__cost">9,99 USD</span>
+                </td>
+              </tr>
+              <tr class="price-table__string">
+                <td class="price-table__cell">
+                  Розовый фильтр
+                  <i class="price-table__icon  price-table__icon--true">Да</i>
+                </td>
+                <td class="price-table__cell">
+                  Розовый фильтр
+                  <i class="price-table__icon  price-table__icon--true">Да</i>
+                </td>
+                <td class="price-table__cell">
+                  Розовый фильтр
+                  <i class="price-table__icon  price-table__icon--true">Да</i>
+                </td>
+              </tr>
+              <tr class="price-table__string">
+                <td class="price-table__cell">
+                  Смайлики
+                  <i class="price-table__icon  price-table__icon--false">Нет</i>
+                </td>
+                <td class="price-table__cell">
+                  Смайлики
+                  <i class="price-table__icon  price-table__icon--true">Да</i>
+                </td>
+                <td class="price-table__cell">
+                  Смайлики
+                  <i class="price-table__icon  price-table__icon--true">Да</i>
+                </td>
+              </tr>
+              <tr class="price-table__string">
+                <td class="price-table__cell">
+                  Комментарии
+                  <i class="price-table__icon  price-table__icon--false">Нет</i>
+                </td>
+                <td class="price-table__cell">
+                  Комментарии
+                  <i class="price-table__icon  price-table__icon--false">Нет</i>
+                </td>
+                <td class="price-table__cell">
+                  Комментарии
+                  <i class="price-table__icon  price-table__icon--true">Да</i>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="slider__controls">
+            <i class="slider__controls-item"></i>
+            <i class="slider__controls-item  slider__controls-item--active"></i>
+            <i class="slider__controls-item"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="contacts">
+        <div class="contacts__container">
+          <p class="contacts__slogan">
+            Остались вопросы?
+            Свяжитесь с нами!
+          </p>
+          <p class="contacts__item">
+            <span class="contacts__title">Звоните:</span>
+            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__item">
+            <span class="contacts__title">Пишите:</span>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__item">
+            <span class="contacts__title">Приезжайте в гости:</span>
+            <span class="contacts__link">ул. Большая Конюшенная, 19/8</span>
+          </p>
+        </div>
+      </div>
+      <div class="map">
+        <img src="http://placehold.it/150x100">
+      </div>
+    </footer>
   </body>
 </html>
