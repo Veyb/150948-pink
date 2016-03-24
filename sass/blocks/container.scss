@@ -1,0 +1,19 @@
+.container {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+@media #{$table-width} {
+  .container {
+    width: 620px;
+    max-width: 1199px;
+  }
+}
+
+@media #{$desktop-width} {
+  .container {
+    width: 940px;
+  }
+}

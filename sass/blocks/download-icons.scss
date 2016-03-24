@@ -1,0 +1,34 @@
+.download-icons {
+  font-size: 0px;
+  padding-bottom: 24px;
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 56px;
+    width: 47px;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--apple {
+      background: url('../img/logo-apple.svg') 0 50% no-repeat;
+    }
+
+    &--android {
+      background: url('../img/logo-android.svg') 0 50% no-repeat;
+    }
+
+    &--windows {
+      background: url('../img/logo-microsoft.svg') 0 50% no-repeat;
+    }
+  }
+}
+
+@media #{$table-width} {
+  .download-icons {
+    padding-bottom: 38px;
+  }
+}

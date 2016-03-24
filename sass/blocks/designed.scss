@@ -1,0 +1,25 @@
+.designed {
+  padding-top: 39px;
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 18px;
+    color: $blue;
+    margin-right: 15px;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 0;
+  }
+}
+
+@media #{$table-width} {
+  .designed {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,379 @@
+.contest-form {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+
+  &__fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  &__field-wrap {
+    padding-bottom: 45px;
+
+    &--contacts {
+      padding-bottom: 55px;
+    }
+  }
+
+  &__field {
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+
+    &--contacts {
+      flex-direction: column-reverse;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__field-label {
+    margin-left: 24px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    color: #d22856;
+
+    &--textarea {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__input {
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    padding: 16px 20px 13px 22px;
+    font-size: 18px;
+    line-height: 30px;
+    outline: none;
+
+    &--textarea {
+      height: 168px;
+      resize: none;
+    }
+  }
+
+  &__choose {
+    background-color: $cream;
+    padding-top: 38px;
+    padding-bottom: 49px;
+    margin-bottom: 30px;
+
+    &--app {
+      margin-bottom: 53px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d22856;
+    margin-bottom: 38px;
+
+    &--legend {
+      display: none;
+    }
+  }
+
+  &__choose-item {
+    padding-bottom: 54px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__choose-label {
+    display: block;
+    padding-left: 70px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    color: $blue;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: -5px;
+      width: 35px;
+      height: 35px;
+      background-color: $white;
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+    }
+
+    &--radio {
+
+      &::before {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    background-color: #2aab6d;
+    border-radius: 2px;
+    width: 100%;
+    padding: 18px 0 15px;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+  }
+}
+
+.contest-form__input::placeholder {
+  color: $blue;
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 1;
+}
+
+.contest-form__radio:checked + .contest-form__choose-label--radio::before {
+  background: url('../img/icon-map-marker.svg') 50% 50% no-repeat $white;
+}
+
+.contest-form__checkbox:checked + .contest-form__choose-label--checkbox::before {
+  background: url('../img/icon-yes.svg') 50% 50% no-repeat $white;
+}
+
+@media #{$table-width} {
+  .contest-form {
+
+    &__fieldset {
+      padding: 45px 58px 51px;
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+      display: flex;
+    }
+
+    &__title {
+      padding: 0 33px;
+      margin: 0;
+
+      & br {
+        display: none;
+      }
+
+      &--legend {
+        display: block;
+      }
+    }
+    &__field-wrap {
+      order: 0;
+
+      &--contacts {
+        order: 3;
+      }
+
+      &--emotions {
+        order: 5;
+      }
+    }
+
+    &__choose {
+      order: 4;
+      background-color: inherit;
+
+      &--app {
+        order: 1;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__container--send {
+      order: 6;
+      display: flex;
+    }
+
+    &__btn {
+      width: 300px;
+      margin: 0;
+      margin-right: auto;
+    }
+
+    &__field {
+
+      &--personal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 52px;
+      }
+
+      &--contacts {
+        // display: flex;
+        flex-direction: column;
+        padding-bottom: 28px;
+      }
+    }
+
+    &__field-label {
+
+      &--personal {
+        margin: 0;
+        margin-right: 20px;
+      }
+
+      &--textarea {
+        padding: 0 40px;
+        margin: 0;
+      }
+
+      &--contacts {
+        margin-bottom: 0;
+        margin-top: 12px;
+      }
+    }
+
+    &__input--personal {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .contest-form {
+    width: 940px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__input {
+
+      &--textarea {
+        height: 125px;
+      }
+
+      &--contacts {
+        width: 329px;
+      }
+    }
+
+    &__field {
+      // margin: 0;
+      // flex-grow: ;
+
+      &--contacts {
+        width: 375px;
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 0;
+        // display: inline-block;
+        // margin: 0 auto;
+      }
+
+      &--number {
+        float: left;
+      }
+
+      &--adress {
+        float: right;
+      }
+
+    }
+    &__container {
+      width: auto;
+    }
+
+    &__field-wrap {
+      width: 435px;
+      padding-top: 20px;
+      padding-bottom: 0;
+
+      &--contacts {
+        padding-top: 55px;
+        width: 100%;
+      }
+
+      &--emotions {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 60px;
+      }
+    }
+
+    &__choose {
+      width: 100%;
+
+      &--app {
+        width: 435px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &__choose-item {
+      display: inline-block;
+      padding-bottom: 45px;
+      width: 260px;
+
+      // &--checkbox {
+      //
+      //   &:nth-child(2),
+      //   &:nth-child(5) {
+      //     margin-right: 20px;
+      //   }
+      // }
+    }
+
+    &__fieldset {
+      display: block;
+      // display: flex;
+      // flex-direction: row;
+      //
+      // flex-wrap: wrap;
+      // justify-content: space-between;
+
+      &--contacts {
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+      }
+    }
+
+    &__title--legend {
+      margin: 0 auto;
+    }
+
+    &__choose-label--checkbox {
+      padding-left: 60px;
+    }
+
+    &__field-label {
+
+      &--contacts {
+        display: block;
+        // margin-top: 12px;
+      }
+    }
+  }
+}

@@ -8,11 +8,13 @@
   <body class="page">
     <header class="page-header">
       <div class="main-header">
-        <div class="container">
+        <div class="container  main-header__container">
           <a class="logo" href="index.html">
-            <img src="http://placehold.it/150x100" alt="HTML Academy: Пинк">
+            <img src="../img/logo-pink-white-mobile.svg" alt="HTML Academy: Пинк" width="75" height="22">
           </a>
-          <button class="main-header__toggle" type="button" name="Кнопка меню"></button>
+          <a class="main-header__toggle">
+            <span class="main-header__toggle-burger"></span>
+          </a>
           <nav class="main-nav">
             <a class="main-nav__item" href="index.html">Главная</a>
             <a class="main-nav__item" href="photo.html">Фотографии</a>
@@ -21,14 +23,16 @@
           </nav>
         </div>
       </div>
-      <div class="page-header__intro">
-        <h1 class="page-header__text">Фотографии пользователей</h1>
+      <div class="page-header__intro  page-header__intro--photo">
+        <div class="container">
+          <h1 class="page-header__text">Фотографии<br> пользователей</h1>
+        </div>
       </div>
     </header>
     <main class="page-main">
       <div class="page-main__intro">
         <div class="container">
-          <p class="page-main__intro-text">
+          <p class="page-main__intro-text  page-main__intro-text--photo">
             Взгляните на фотографии, которые
             выкладывают пользователи!
             Видите, как не хватает ваших?
@@ -36,28 +40,28 @@
         </div>
       </div>
       <div class="gallery">
-        <article class="gallery__item">
+        <article class="gallery__item  gallery__item--panorama">
           <a class="gallery__image" href="#">
-            <img src="http://placehold.it/150x100">
+            <img src="../img/panorama-mobile.jpg">
           </a>
-          <div class="gallery__label">
-            <p class="gallery__label-text">Панорама дня</p>
+          <div class="container">
+            <p class="gallery__label">Панорама дня</p>
           </div>
           <div class="container">
-            <div class="comment">
-              <div class="comment__title">
+            <div class="comment  comment--panorama">
+              <div class="comment__title  comment__title--panorama">
                 <a class="comment__author" href="#">Анна</a>
                 <span class="comment__time">(5 минут назад)</span>
               </div>
-              <p class="comment__text">
+              <p class="comment__text  comment__text--panorama">
                 Прыгать или нет? Напишите в
                 коментарии свой совет и смотрите
                 прямую транслацию в перископе,
                 задавайте свои вопросы!
               </p>
-              <div class="post-like">
-                <a class="post-like__icon" href="#">
-                  <img src="http://placehold.it/150x100">
+              <div class="post-like  post-like--panorama">
+                <a class="post-like__icon  post-like__icon--panorama" href="#">
+                  <img src="../img/icon-heart.svg">
                 </a>
                 <span class="post-like__link">Нравится:</span>
                 <span class="post-like__count">215</span>
@@ -65,10 +69,10 @@
             </div>
           </div>
         </article>
-        <article class="gallery__item">
-          <div class="container">
+        <div class="container  gallery__container">
+          <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="http://placehold.it/150x100">
+              <img src="../img/photo-1-mobile.jpg">
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -81,18 +85,16 @@
               </p>
               <div class="post-like">
                 <a class="post-like__icon" href="#">
-                  <img src="http://placehold.it/150x100">
+                  <img src="../img/icon-heart.svg">
                 </a>
                 <span class="post-like__link">Нравится:</span>
                 <span class="post-like__count">356</span>
               </div>
             </div>
-          </div>
-        </article>
-        <article class="gallery__item">
-          <div class="container">
+          </article>
+          <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="http://placehold.it/150x100">
+              <img src="../img/photo-2-mobile.jpg">
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -104,18 +106,16 @@
               </p>
               <div class="post-like">
                 <a class="post-like__icon" href="#">
-                  <img src="http://placehold.it/150x100">
+                  <img src="../img/icon-heart.svg">
                 </a>
                 <span class="post-like__link">Нравится:</span>
                 <span class="post-like__count">666</span>
               </div>
             </div>
-          </div>
-        </article>
-        <article class="gallery__item">
-          <div class="container">
+          </article>
+          <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="http://placehold.it/150x100">
+              <img src="../img/photo-3-mobile.jpg">
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -128,18 +128,16 @@
               </p>
               <div class="post-like">
                 <a class="post-like__icon" href="#">
-                  <img src="http://placehold.it/150x100">
+                  <img src="../img/icon-heart.svg">
                 </a>
                 <span class="post-like__link">Нравится:</span>
                 <span class="post-like__count">215</span>
               </div>
             </div>
-          </div>
-        </article>
-        <article class="gallery__item">
-          <div class="container">
+          </article>
+          <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="http://placehold.it/150x100">
+              <img src="../img/photo-4-mobile.jpg">
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -151,18 +149,16 @@
               </p>
               <div class="post-like">
                 <a class="post-like__icon" href="#">
-                  <img src="http://placehold.it/150x100">
+                  <img src="../img/icon-heart.svg">
                 </a>
                 <span class="post-like__link">Нравится:</span>
                 <span class="post-like__count">4</span>
               </div>
             </div>
-          </div>
-        </article>
-        <article class="gallery__item">
-          <div class="container">
+          </article>
+          <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="http://placehold.it/150x100">
+              <img src="../img/photo-5-mobile.jpg">
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -174,18 +170,16 @@
               </p>
               <div class="post-like">
                 <a class="post-like__icon" href="#">
-                  <img src="http://placehold.it/150x100">
+                  <img src="../img/icon-heart.svg">
                 </a>
                 <span class="post-like__link">Нравится:</span>
                 <span class="post-like__count">150</span>
               </div>
             </div>
-          </div>
-        </article>
-        <article class="gallery__item">
-          <div class="container">
+          </article>
+          <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="http://placehold.it/150x100">
+              <img src="../img/photo-6-mobile.jpg">
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -197,14 +191,14 @@
               </p>
               <div class="post-like">
                 <a class="post-like__icon" href="#">
-                  <img src="http://placehold.it/150x100">
+                  <img src="../img/icon-heart.svg">
                 </a>
                 <span class="post-like__link">Нравится:</span>
                 <span class="post-like__count">2560</span>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
         <div class="gallery__slogan">
           <div class="container">
             <p class="gallery__slogan-text">
@@ -216,54 +210,65 @@
           </div>
         </div>
         <div class="redactor">
-          <div class="container">
+          <div class="container  redactor__container">
             <div class="redactor__upload">
               <a class="redactor__image" href="#">
-                <img src="http://placehold.it/150x100">
+                <img src="../img/photo-7-mobile.jpg">
               </a>
             </div>
-            <div class="redactor__tools">
-              <a class="redactor__icon  redactor__icon--crop" href="#">Обрезка</a>
-              <div class="range-control  range-control--crop">
-                  <div class="range-control__scale"><div class="range-control__bar"></div></div>
-                  <div class="range-control__toggle"></div>
+            <div class="redactor__manage">
+              <div class="redactor__tools">
+                <div class="redactor__tool  redactor__tool--crop">
+                  <a class="redactor__icon  redactor__icon--crop" href="#">Обрезка</a>
+                  <div class="range-control  range-control--crop">
+                    <div class="range-control__scale"></div>
+                    <div class="range-control__toggle  range-control__toggle--crop"></div>
+                  </div>
+                </div>
+                <div class="redactor__tool  redactor__tool--fill">
+                  <a class="redactor__icon  redactor__icon--fill" href="#">Заливка</a>
+                  <div class="range-control  range-control--fill">
+                    <div class="range-control__scale"></div>
+                    <div class="range-control__toggle  range-control__toggle--fill"></div>
+                  </div>
+                </div>
+                <div class="redactor__tool  redactor__tool--contrast">
+                  <a class="redactor__icon  redactor__icon--contrast" href="#">Контраст</a>
+                  <div class="range-control  range-control--contrast">
+                    <div class="range-control__scale"></div>
+                    <div class="range-control__toggle  range-control__toggle--contrast"></div>
+                  </div>
+                </div>
               </div>
-              <a class="redactor__icon  redactor__icon--fill" href="#">Заливка</a>
-              <div class="range-control  range-control--fill">
-                  <div class="range-control__scale"><div class="range-control__bar"></div></div>
-                  <div class="range-control__toggle"></div>
+              <div class="redactor__btns">
+                <button class="btn  redactor__btn" type="button" name="Запостить">Запостить</button>
+                <button class="btn  redactor__btn" type="button" name="Отмена" disabled>Отмена</button>
               </div>
-              <a class="redactor__icon  redactor__icon--contrast" href="#">Контраст</a>
-              <div class="range-control  range-control--contrast">
-                  <div class="range-control__scale"><div class="range-control__bar"></div></div>
-                  <div class="range-control__toggle"></div>
-              </div>
-            </div>
-            <div class="redactor__btns">
-              <button class="btn  redactor__btn" type="button" name="Запостить">Запостить</button>
-              <button class="btn  redactor__btn" type="button" name="Отмена">Отмена</button>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="container">
-        <a class="logo  page-footer__logo" href="index.html">
-          <img src="http://placehold.it/150x100">
-        </a>
-        <div class="social-icons">
-          <a class="social-icons__icon  social-icons__icon--tw" href="#">Twitter</a>
-          <a class="social-icons__icon  social-icons__icon--fb" href="#">Facebook</a>
-          <a class="social-icons__icon  social-icons__icon--you" href="#">YouTube</a>
-        </div>
-        <div class="designed">
-          <span class="designed__text">Разработано</span>
-          <a class="designed__link" href="https://htmlacademy.ru/">
-            <img src="http://placehold.it/150x100">
+    <footer class="page-footer  page-footer--photo">
+      <div class="page-footer__footer">
+        <div class="container  page-footer__container">
+          <a class="logo  page-footer__logo" href="index.html">
+            <img src="../img/logo-pink-blue-mobile.svg" width="147" height="41">
           </a>
+          <div class="social-icons">
+            <a class="social-icons__icon  social-icons__icon--tw" href="#">Twitter</a>
+            <a class="social-icons__icon  social-icons__icon--fb" href="#">Facebook</a>
+            <a class="social-icons__icon  social-icons__icon--you" href="#">YouTube</a>
+          </div>
+          <div class="designed">
+            <span class="designed__text">Разработано</span>
+            <a class="designed__link" href="https://htmlacademy.ru/">
+              <img src="../img/logo-htmlacademy.svg">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="js/burger.js"></script>
   </body>
 </html>

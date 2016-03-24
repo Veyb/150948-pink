@@ -1,0 +1,10 @@
+.reviews {
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+@media #{$desktop-width} {
+  .reviews {
+    padding-top: 180px;
+  }
+}
