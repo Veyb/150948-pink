@@ -92,14 +92,17 @@
 
 #price-radio-1:checked ~ .price__table .price-table {
   transform: translateX(33.3%);
+  transition: 0.5s;
 }
 
 #price-radio-2:checked ~ .price__table .price-table {
   transform: translateX(0%);
+  transition: 0.5s;
 }
 
 #price-radio-3:checked ~ .price__table .price-table {
   transform: translateX(-33.3%);
+  transition: 0.5s;
 }
 
 @media #{$table-width} {
@@ -148,7 +151,7 @@
     &__slide-info {
       font-size: 18px;
     }
-    
+
     &__controls {
       display: none;
     }
