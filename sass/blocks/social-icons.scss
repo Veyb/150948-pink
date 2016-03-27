@@ -1,0 +1,31 @@
+.social-icons {
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+
+  &__icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--tw {
+      background: url('../img/icon-twitter.svg') no-repeat 50% 50% $white;
+    }
+
+    &--fb {
+      background: url('../img/icon-facebook.svg') no-repeat 50% 50% $white;
+    }
+
+    &--you {
+      background: url('../img/icon-youtube.svg') no-repeat 50% 50% $white;
+    }
+  }
+}

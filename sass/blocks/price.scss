@@ -1,0 +1,11 @@
+.price {
+  background-color: $cream;
+  padding-top: 35px;
+  padding-bottom: 47px;
+
+  &__table {
+    position: relative;
+    margin: 0 auto 40px;
+    min-height: 281px;
+  }
+}

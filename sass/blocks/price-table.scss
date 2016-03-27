@@ -1,0 +1,150 @@
+.price-table {
+  text-transform: uppercase;
+  border-collapse: collapse;
+  position: absolute;
+  width: 270%;
+  left: -85%;
+
+  &__string {
+    background-color: $white;
+    color: $blue;
+
+    & td:first-child {
+      display: none;
+    }
+
+    &--first {
+    background-color: $blue;
+    color: $white;
+    }
+  }
+
+  &__empty {
+    background-color: $cream;
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  &__header {
+    position: relative;
+    text-align: center;
+    border-right: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    padding: 18px 0 19px;
+
+    &--hit {
+
+      &::after {
+        position: absolute;
+        content: "ХИТ";
+        top: 0;
+        left: -2px;
+        width: 74px;
+        height: 73px;
+        background: url('../img/bg-hit.svg') 0 0 no-repeat;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  &__cost {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  &__cell {
+    position: relative;
+    padding: 16px 48px 14px 22px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: left;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+
+  }
+
+  &__icon {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 15px;
+    right: 48px;
+
+    &--true {
+      background: url('../img/icon-yes.svg') 0 50% no-repeat;
+      background-size: contain;
+    }
+
+    &--false {
+      background: url('../img/icon-no.svg') 0 50% no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media #{$table-width} {
+  .price-table {
+    position: static;
+    width: 620px;
+    margin: 0 auto;
+
+    &__header {
+      padding: 10px 0;
+    }
+    &__cell {
+      font-size: 0;
+      width: 125px;
+      text-transform: none;
+      padding: 8px 15px;
+    }
+
+    & td:first-child {
+      display: table-cell;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__cost {
+      font-size: 18px;
+    }
+
+    &__icon {
+      top: 50%;
+      right: 50%;
+      transform: translate(50%,-50%);
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .price-table {
+    width: 940px;
+
+    & td:first-child {
+      font-size: 18px;
+    }
+    
+    &__title {
+      font-size: 18px;
+    }
+
+    &__cost {
+      font-size: 24px;
+    }
+  }
+}

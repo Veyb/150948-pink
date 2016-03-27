@@ -1,0 +1,50 @@
+.comment {
+  text-align: left;
+  background-color: $cream;
+  padding: 20px 18px;
+
+  &__title {
+    line-height: 24px;
+    color: $blue;
+  }
+
+  &__author {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: $blue;
+  }
+
+  &__time {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
+
+@media #{$table-width} {
+  .comment {
+    display: flex;
+    flex-direction: column;
+    min-height: 110px;
+    padding: 24px 28px 21px;
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: 0;
+    }
+
+    &__title--panorama {
+      order: 1;
+    }
+
+    &__text--panorama {
+      order: 3;
+    }
+  }
+}
