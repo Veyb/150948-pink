@@ -8,6 +8,10 @@
     color: $blue;
   }
 
+  &__desktop {
+    display: none;
+  }
+
   &__mark {
     color: #d22856;
   }
@@ -16,5 +20,14 @@
 @media #{$table-width} {
   .note {
     align-self: center;
+  }
+}
+
+@media #{$desktop-width} {
+  .note {
+
+    &__desktop {
+      display: inline;
+    }
   }
 }

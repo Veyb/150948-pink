@@ -169,12 +169,12 @@
       padding: 45px 58px 51px;
       border: 2px solid #e5e5e5;
       border-radius: 2px;
-      display: flex;
     }
 
     &__title {
       padding: 0 33px;
-      margin: 0;
+      margin: 0 auto;
+      line-height: 30px;
 
       & br {
         display: none;
@@ -242,7 +242,7 @@
 
       &--textarea {
         padding: 0 40px;
-        margin: 0;
+        margin: 0 auto;
       }
 
       &--contacts {
@@ -276,28 +276,31 @@
       }
     }
 
+    &__field-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__choose-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &--app {
+        display: flex;
+        flex-direction: column;
+        padding: 0 43px;
+      }
+    }
+
     &__field {
-      // margin: 0;
-      // flex-grow: ;
 
       &--contacts {
         width: 375px;
-        display: inline-block;
-        vertical-align: top;
         padding-bottom: 0;
-        // display: inline-block;
-        // margin: 0 auto;
       }
-
-      &--number {
-        float: left;
-      }
-
-      &--adress {
-        float: right;
-      }
-
     }
+
     &__container {
       width: auto;
     }
@@ -319,6 +322,14 @@
       }
     }
 
+    &__title {
+      white-space: nowrap;
+
+      &--app {
+        padding: 0 20px;
+      }
+    }
+
     &__choose {
       width: 100%;
 
@@ -330,38 +341,55 @@
     }
 
     &__choose-item {
-      display: inline-block;
-      padding-bottom: 45px;
       width: 260px;
 
-      // &--checkbox {
-      //
-      //   &:nth-child(2),
-      //   &:nth-child(5) {
-      //     margin-right: 20px;
-      //   }
-      // }
+      &--app {
+        padding-bottom: 48px;
+        // width: 220px;
+        // margin: 0;
+      }
+
+      &--selfi {
+        order: 1;
+      }
+
+      &--norris {
+        order: 2;
+      }
+
+      &--tower {
+        order: 3;
+      }
+
+      &--beach {
+        order: 4;
+        padding-bottom: 0;
+      }
+
+      &--shopping {
+        order: 5;
+        padding-bottom: 0;
+      }
+
+      &--hotel {
+        order: 6;
+        padding-bottom: 0;
+      }
     }
 
     &__fieldset {
       display: block;
-      // display: flex;
-      // flex-direction: row;
-      //
-      // flex-wrap: wrap;
-      // justify-content: space-between;
+
+      &--app {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
 
       &--contacts {
         display: block;
         padding-top: 30px;
         padding-bottom: 10px;
-        // flex-direction: row;
-        // flex-wrap: wrap;
       }
-    }
-
-    &__title--legend {
-      margin: 0 auto;
     }
 
     &__choose-label--checkbox {
@@ -372,7 +400,6 @@
 
       &--contacts {
         display: block;
-        // margin-top: 12px;
       }
     }
   }
