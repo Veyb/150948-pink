@@ -15,6 +15,7 @@
 
     &--apple {
       background: url('../img/logo-apple.svg') 0 50% no-repeat;
+      transform: translateY(-5px);
     }
 
     &--android {
@@ -30,5 +31,11 @@
 @media #{$table-width} {
   .download-icons {
     padding-bottom: 38px;
+  }
+}
+
+@media #{$desktop-width} {
+  .download-icons {
+    padding-bottom: 50px;
   }
 }

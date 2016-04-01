@@ -33,14 +33,24 @@
 
     &--hit {
 
-      &::after {
+      &::before {
         position: absolute;
-        content: "ХИТ";
+        content: "";
         top: 0;
         left: -2px;
         width: 74px;
         height: 73px;
         background: url('../img/bg-hit.svg') 0 0 no-repeat;
+      }
+
+      &::after {
+        position: absolute;
+        content: "ХИТ";
+        transform: rotate(-45deg);
+        top: 7px;
+        left: 4px;
+        width: 74px;
+        height: 73px;
       }
     }
   }
@@ -76,19 +86,19 @@
     font-size: 0;
     line-height: 0;
     position: absolute;
-    width: 26px;
+    width: 31px;
     height: 26px;
     top: 15px;
     right: 48px;
 
     &--true {
-      background: url('../img/icon-yes.svg') 0 50% no-repeat;
-      background-size: contain;
+      background: url('../img/icon-yes-green.svg') 0 50% no-repeat;
+      background-size: 31px;
     }
 
     &--false {
-      background: url('../img/icon-no.svg') 0 50% no-repeat;
-      background-size: contain;
+      background: url('../img/icon-no-red.svg') 0 50% no-repeat;
+      background-size: 27px;
     }
   }
 }
@@ -124,9 +134,7 @@
     }
 
     &__icon {
-      top: 50%;
-      right: 50%;
-      transform: translate(50%,-50%);
+      transform: translate(-10px, -5px);
     }
   }
 }
@@ -145,6 +153,10 @@
 
     &__cost {
       font-size: 24px;
+    }
+
+    &__icon {
+      transform: translate(-50px, -5px);
     }
   }
 }

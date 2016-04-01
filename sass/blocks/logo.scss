@@ -1,3 +1,29 @@
 .logo {
+  width: 75px;
+  height: 23px;
 
+  &:hover .main-header__logo--text,
+  &:hover .main-header__logo--glass,
+  &:hover .main-header__logo--stars-glass {
+    fill: #d22856;
+  }
+
+  &:active .main-header__logo--text,
+  &:active .main-header__logo--glass,
+  &:active .main-header__logo--stars-glass {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  &:active .main-header__logo--stars {
+    opacity: 0.3;
+  }
+}
+
+@media #{$table-width} {
+  .logo {
+    width: 147px;
+    height: 41px;
+    transform: translateY(-8px);
+  }
 }

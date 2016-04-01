@@ -13,6 +13,32 @@
     height: 41px;
     float: none;
     padding-bottom: 40px;
+
+    &--stars,
+    &--stars-glass {
+      display: none;
+    }
+
+    &:hover &--text,
+    &:hover &--stars {
+      fill: #d22856;
+    }
+
+    &:active &--text,
+    &:active &--stars {
+      fill: #283645;
+      opacity: 0.3;
+    }
+
+    &:active &--stars {
+      fill: #d22856;
+      opacity: 0.3;
+    }
+
+    &:active &--glass,
+    &:active &--stars-glass {
+      opacity: 0.3;
+    }
   }
 
   &__footer--main {
@@ -48,6 +74,23 @@
       margin: 0;
       padding: 0;
       align-self: flex-start;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .page-footer {
+
+    &__logo {
+
+      &--glass {
+        display: none;
+      }
+
+      &--stars,
+      &--stars-glass {
+        display: block;
+      }
     }
   }
 }

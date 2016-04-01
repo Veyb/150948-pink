@@ -1,8 +1,9 @@
 .map {
   height: 200px;
   overflow: hidden;
+  background: url('../img/bg-map.png') 50% 0 no-repeat $cream;
 
   &::before {
-    
+
   }
 }

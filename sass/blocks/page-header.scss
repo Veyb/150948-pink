@@ -5,6 +5,11 @@
   font-weight: 300;
   margin-bottom: 47px;
 
+  @media #{$retina} {
+    background: url('../img/bg-back-mobile@2x.jpg') 50% -5px no-repeat $dark-blue;
+    background-size: 700px;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -23,9 +28,12 @@
       display: flex;
       min-height: 729px;
       text-align: center;
-      background-image: url('../img/iphone-hand-mobile.png');
-      background-repeat: no-repeat;
-      background-position: left 171px;
+      background: url('../img/iphone-hand-mobile.png') no-repeat left 171px;
+
+      @media #{$retina} {
+        background: url('../img/iphone-hand-mobile@2x.png') no-repeat left 171px;
+        background-size: 258px;
+      }
     }
 
     &--photo {
@@ -48,7 +56,13 @@
 
 @media #{$table-width} {
   .page-header {
-    background-size: cover;
+    background: url('../img/bg-back-tablet@1x.jpg') 50% -5px no-repeat $dark-blue;
+
+    @media #{$retina} {
+      background: url('../img/bg-back-tablet@2x.jpg') 50% -5px no-repeat $dark-blue;
+      background-size: 1200px;
+    }
+
     &__intro {
 
       &--photo {
@@ -70,6 +84,7 @@
       line-height: 1.2;
 
       &--main {
+        display: block;
         font-size: 40px;
         width: 200px;
         padding: 0 50px;
@@ -77,25 +92,48 @@
     }
 
     &__container {
-      background: url('../img/iphone-hand-mobile.png') 100% 100% no-repeat;
-      background-size: 75%;
+      min-height: 729px;
+      background: url('../img/iphone-hand-tablet@1x.png') 50% bottom no-repeat;
+
+      @media #{$retina} {
+        background: url('../img/iphone-hand-tablet@2x.png') 50% bottom no-repeat;
+        background-size: 700px;
+      }
     }
   }
 }
 
 @media #{$desktop-width} {
   .page-header {
+    background: url('../img/bg-back-desktop.jpg') 50% -5px no-repeat $dark-blue;
 
     &__text {
+
+      &--main {
+        font-size: 50px;
+        width: 240px;
+        padding: 0 30px;
+      }
 
       & br {
         display: block;
       }
     }
+
     &__intro {
 
       &--main {
         min-height: 853px;
+      }
+    }
+
+    &__container {
+      min-height: 853px;
+      background: url('../img/iphone-hand-desktop@1x.png') 0 bottom no-repeat;
+
+      @media #{$retina} {
+        background: url('../img/iphone-hand-desktop@2x.png') 0 bottom no-repeat;
+        background-size: 1050px;
       }
     }
   }

@@ -3,12 +3,17 @@
   padding-bottom: 288px;
   background: url('../img/iphone-screen-mobile.png') no-repeat 50% 110% $cream;
 
+  @media #{$retina} {
+    background: url('../img/iphone-screen-mobile@2x.png') no-repeat 50% 110% $cream;
+    background-size: 157px;
+  }
+
   &::before {
 
   }
 
   &__items {
-
+    padding-top: 70px;
   }
 
   &__item {
@@ -16,7 +21,7 @@
     line-height: 24px;
     font-weight: 400;
     color: $blue;
-    margin-bottom: 32px;
+    margin-bottom: 37px;
   }
 
   &__item-title {
@@ -28,6 +33,10 @@
   }
   &__item-text {
     margin: 0;
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -41,7 +50,19 @@
       flex-direction: column;
       padding-left: 50%;
       text-align: left;
-      background: url('../img/iphone-screen-mobile.png') no-repeat 0 160% $cream;
+      background: url('../img/iphone-screen-tablet-3@1x.png') no-repeat 0 100% $cream;
+
+      @media #{$retina} {
+        background: url('../img/iphone-screen-tablet-3@2x.png') no-repeat 0 0 $cream;
+        background-size: 268px;
+      }
+    }
+
+    &__item-text {
+
+      & br {
+        display: block;
+      }
     }
   }
 }
@@ -60,7 +81,34 @@
     &__item {
       padding-top: 365px;
       width: 240px;
-      background: url('../img/iphone-screen-mobile.png') no-repeat 50% 0 $cream;
+      margin-bottom: 0;
+
+      &:nth-child(1) {
+        background: url('../img/iphone-screen-desktop-1@1x.png') no-repeat 50% 0 $cream;
+
+        @media #{$retina} {
+          background: url('../img/iphone-screen-desktop-1@2x.png') no-repeat 50% 0 $cream;
+          background-size: 292px;
+        }
+      }
+
+      &:nth-child(2) {
+        background: url('../img/iphone-screen-desktop-2@1x.png') no-repeat 50% 0 $cream;
+
+        @media #{$retina} {
+          background: url('../img/iphone-screen-desktop-2@2x.png') no-repeat 50% 0 $cream;
+          background-size: 292px;
+        }
+      }
+
+      &:nth-child(3) {
+        background: url('../img/iphone-screen-desktop-3@1x.png') no-repeat 50% 0 $cream;
+
+        @media #{$retina} {
+          background: url('../img/iphone-screen-desktop-3@2x.png') no-repeat 50% 0 $cream;
+          background-size: 292px;
+        }
+      }
     }
 
     &__item-title {
@@ -72,6 +120,10 @@
     &__item-text {
       font-size: 18px;
       line-height: 30px;
+
+      & br {
+        display: none;
+      }
     }
   }
 }

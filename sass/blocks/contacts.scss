@@ -26,6 +26,15 @@
     color: #d22856;
     font-size: 24px;
 
+    &--mail:hover {
+      color: $blue;
+      border-bottom: 2px solid $blue;
+    }
+
+    &--mail:active {
+      opacity: 0.3;
+      border-bottom: none;
+    }
   }
 }
 

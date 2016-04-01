@@ -19,6 +19,35 @@
       font-size: 14px;
       line-height: 24px;
       font-weight: 400;
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 240px;
+        height: 277px;
+        background: url('../img/icon-timer.svg') no-repeat;
+        background-size: 240px;
+      }
+
+      &::after {
+        position: absolute;
+        top: 56px;
+        left: 18px;
+        content: "24";
+        text-align: center;
+        padding-top: 10px;
+        color: #d22856;
+        font-size: 96px;
+        line-height: 150px;
+        font-weight: 600;
+        width: 176px;
+        height: 166px;
+        border-radius: 50%;
+        border: 14px solid #d22856;
+        background-color: $cream;
+      }
     }
 
     &__title {
@@ -46,14 +75,35 @@
 @media #{$desktop-width} {
   .effect {
     background-color: $cream;
-    
+    padding-top: 70px;
+    padding-bottom: 65px;
+
     &__content {
       width: 61%;
+      min-height: 0;
+      padding-top: 97px;
+      padding-bottom: 45px;
+
+      &::before {
+        width: 298px;
+        height: 346px;
+        background-size: 298px;
+      }
+
+      &::after {
+        width: 219px;
+        height: 209px;
+        top: 68px;
+        left: 22px;
+        border: 17px solid #d22856;
+        font-size: 120px;
+        line-height: 187px;
+      }
     }
 
     &__title {
       line-height: 30px;
-      margin-bottom: 25px;
+      margin-bottom: 23px;
 
       & br {
         display: none;
@@ -63,7 +113,7 @@
       width: 100%;
       font-size: 18px;
       line-height: 30px;
-      margin-bottom: 32px;
+      margin-bottom: 30px;
 
       & br {
         display: none;
