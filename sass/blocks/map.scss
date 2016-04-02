@@ -1,9 +1,25 @@
 .map {
-  height: 200px;
+  height: 210px;
   overflow: hidden;
   background: url('../img/bg-map.png') 50% 0 no-repeat $cream;
 
+  &__inner {
+    height: 100%;
+  }
+
   &::before {
 
+  }
+}
+
+@media #{$table-width} {
+  .map {
+    height: 400px;
+  }
+}
+
+@media #{$desktop-width} {
+  .map {
+    height: 520px;
   }
 }
