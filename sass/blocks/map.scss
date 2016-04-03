@@ -37,7 +37,18 @@
 
     &::before {
       background-size: 110%;
-      height: 120px;
+      height: 140px;
+    }
+  }
+}
+
+@media #{$desktop-large-width} {
+  .map {
+    height: 700px;
+
+    &::before {
+      background-size: 110%;
+      height: 230px;
     }
   }
 }
