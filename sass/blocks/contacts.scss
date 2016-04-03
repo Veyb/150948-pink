@@ -2,16 +2,17 @@
   line-height: 1.3;
   font-weight: 300;
   color: $blue;
+  padding-bottom: 15px;
 
   &__slogan {
     margin: 0;
     font-size: 24px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 
   &__item {
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 23px;
   }
 
   &__title {
@@ -40,16 +41,19 @@
 
 @media #{$table-width} {
   .contacts {
+    padding-bottom: 25px;
 
     &__container {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
     }
 
     &__slogan {
       font-size: 40px;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 38px;
       width: 400px;
     }
 
@@ -58,17 +62,23 @@
       margin-bottom: 48px;
 
       &--call {
-        margin-right: auto;
+        margin-right: 10px;
       }
 
       &--write {
-        margin-left: auto;
+        margin-left: 10px;
       }
 
       &--come {
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 0;
       }
+    }
+
+    &__link {
+      display: block;
+      margin-top: 4px;
     }
   }
 }
@@ -86,12 +96,11 @@
       margin: 0 auto;
       font-size: 50px;
       order: 0;
-      margin-bottom: 64px;
+      margin-bottom: 51px;
     }
 
     &__item {
       margin: 0;
-      // display: block;
 
       &--call {
         order: 1;
@@ -103,16 +112,13 @@
 
       &--come {
         order: 2;
+        margin: 0 20px;
       }
     }
 
     &__link {
       display: block;
-      margin-top: 24px;
+      margin-top: 22px;
     }
-    // &__title {
-    //   margin-bottom: 24px;
-    // }
-
   }
 }

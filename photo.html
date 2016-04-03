@@ -12,7 +12,7 @@
       <div class="main-header">
         <div class="container  main-header__container">
           <a class="logo" href="index.html">
-            <svg class="main-header__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="main-header__logo" version="1.1" id="main-header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
               	<path class="main-header__logo--text" fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064
@@ -122,19 +122,23 @@
         <div class="container">
           <p class="page-main__intro-text  page-main__intro-text--photo">
             Взгляните на фотографии, которые
-            выкладывают пользователи!
+            выкладывают пользователи!<br>
             Видите, как не хватает ваших?
           </p>
         </div>
       </div>
       <div class="gallery">
         <article class="gallery__item  gallery__item--panorama">
-          <a class="gallery__image" href="#">
-            <img src="./img/panorama-mobile.jpg">
-          </a>
           <div class="container">
             <p class="gallery__label">Панорама дня</p>
           </div>
+          <a class="gallery__image" href="#">
+            <picture>
+              <source media="(min-width: 950px)" srcset="./img/panorama-desktop.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 641px)" srcset="./img/panorama-tablet.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
+              <img src="./img/panorama-mobile.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
+          </a>
           <div class="container">
             <div class="comment  comment--panorama">
               <div class="comment__title  comment__title--panorama">
@@ -160,7 +164,11 @@
         <div class="container  gallery__container">
           <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="./img/photo-1-mobile.jpg">
+              <picture>
+                <source media="(min-width: 950px)" srcset="./img/photo-1-desktop.jpg 1x, ./img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 641px)" srcset="./img/photo-1-tablet.jpg 1x, ./img/photo-1-tablet@2x.jpg 2x">
+                <img src="./img/photo-1-mobile.jpg" srcset="./img/photo-1-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -182,7 +190,11 @@
           </article>
           <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="./img/photo-2-mobile.jpg">
+              <picture>
+                <source media="(min-width: 950px)" srcset="./img/photo-2-desktop.jpg 1x, ./img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 641px)" srcset="./img/photo-2-tablet.jpg 1x, ./img/photo-2-tablet@2x.jpg 2x">
+                <img src="./img/photo-2-mobile.jpg" srcset="./img/photo-2-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -203,7 +215,11 @@
           </article>
           <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="./img/photo-3-mobile.jpg">
+              <picture>
+                <source media="(min-width: 950px)" srcset="./img/photo-3-desktop.jpg 1x, ./img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 641px)" srcset="./img/photo-3-tablet.jpg 1x, ./img/photo-3-tablet@2x.jpg 2x">
+                <img src="./img/photo-3-mobile.jpg" srcset="./img/photo-3-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -225,7 +241,11 @@
           </article>
           <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="./img/photo-4-mobile.jpg">
+              <picture>
+                <source media="(min-width: 950px)" srcset="./img/photo-4-desktop.jpg 1x, ./img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 641px)" srcset="./img/photo-4-tablet.jpg 1x, ./img/photo-4-tablet@2x.jpg 2x">
+                <img src="./img/photo-4-mobile.jpg" srcset="./img/photo-4-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -246,7 +266,11 @@
           </article>
           <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="./img/photo-5-mobile.jpg">
+              <picture>
+                <source media="(min-width: 950px)" srcset="./img/photo-5-desktop.jpg 1x, ./img/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 641px)" srcset="./img/photo-5-tablet.jpg 1x, ./img/photo-5-tablet@2x.jpg 2x">
+                <img src="./img/photo-5-mobile.jpg" srcset="./img/photo-5-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -267,7 +291,11 @@
           </article>
           <article class="gallery__item">
             <a class="gallery__image" href="#">
-              <img src="./img/photo-6-mobile.jpg">
+              <picture>
+                <source media="(min-width: 950px)" srcset="./img/photo-6-desktop.jpg 1x, ./img/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 641px)" srcset="./img/photo-6-tablet.jpg 1x, ./img/photo-6-tablet@2x.jpg 2x">
+                <img src="./img/photo-6-mobile.jpg" srcset="./img/photo-6-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
             </a>
             <div class="comment">
               <div class="comment__title">
@@ -301,27 +329,55 @@
           <div class="container  redactor__container">
             <div class="redactor__upload">
               <a class="redactor__image" href="#">
-                <img src="./img/photo-7-mobile.jpg">
+                <picture>
+                  <source media="(min-width: 950px)" srcset="./img/photo-7-desktop.jpg 1x, ./img/photo-7-desktop@2x.jpg 2x">
+                  <source media="(min-width: 641px)" srcset="./img/photo-7-tablet.jpg 1x, ./img/photo-7-tablet@2x.jpg 2x">
+                  <img src="./img/photo-7-mobile.jpg" srcset="./img/photo-7-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </a>
             </div>
             <div class="redactor__manage">
               <div class="redactor__tools">
-                <div class="redactor__tool  redactor__tool--crop">
-                  <a class="redactor__icon  redactor__icon--crop" href="#">Обрезка</a>
-                  <div class="range-control  range-control--crop">
+                <div class="redactor__tool  redactor__tool--active  redactor__tool--crop">
+                  <a class="redactor__link  redactor__link--crop" href="#">Обрезка
+                    <svg class="redactor__icon  redactor__icon--crop" version="1.0" id="icon--crop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z"/>
+                      <path class="redactor__icon-body" fill="#b5b9be" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                    </svg>
+                  </a>
+                  <div class="range-control  range-control--active  range-control--crop">
                     <div class="range-control__scale"></div>
                     <div class="range-control__toggle  range-control__toggle--crop"></div>
                   </div>
                 </div>
                 <div class="redactor__tool  redactor__tool--fill">
-                  <a class="redactor__icon  redactor__icon--fill" href="#">Заливка</a>
+                  <a class="redactor__link  redactor__link--fill" href="#">Заливка
+                    <svg class="redactor__icon  redactor__icon--fill" version="1.0" id="icon--fill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z"/>
+                      <path class="redactor__icon-body" fill="#b5b9be" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34
+                    	s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7
+                    	c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                      <rect class="redactor__icon-body" fill="#b5b9be" y="40" width="48" height="3"/>
+                    </svg>
+                  </a>
                   <div class="range-control  range-control--fill">
                     <div class="range-control__scale"></div>
                     <div class="range-control__toggle  range-control__toggle--fill"></div>
                   </div>
                 </div>
                 <div class="redactor__tool  redactor__tool--contrast">
-                  <a class="redactor__icon  redactor__icon--contrast" href="#">Контраст</a>
+                  <a class="redactor__link  redactor__link--contrast" href="#">Контраст
+                    <svg class="redactor__icon  redactor__icon--contrast" version="1.0" id="icon--contrast" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+                    	xml:space="preserve">
+                      <path class="redactor__icon-body" fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+                    	S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
+                    	C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                      <path class="redactor__icon-body" fill="#b5b9be" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                    </svg>
+                  </a>
                   <div class="range-control  range-control--contrast">
                     <div class="range-control__scale"></div>
                     <div class="range-control__toggle  range-control__toggle--contrast"></div>
@@ -329,8 +385,8 @@
                 </div>
               </div>
               <div class="redactor__btns">
-                <button class="btn  redactor__btn" type="button" name="Запостить">Запостить</button>
-                <button class="btn  redactor__btn" type="button" name="Отмена" disabled>Отмена</button>
+                <button class="btn  redactor__btn  redactor__btn--upload" type="button" name="Запостить">Запостить</button>
+                <button class="btn  redactor__btn  redactor__btn--cancel" type="button" name="Отмена">Отмена</button>
               </div>
             </div>
           </div>
@@ -341,7 +397,7 @@
       <div class="page-footer__footer">
         <div class="container  page-footer__container">
           <a class="logo  page-footer__logo" href="index.html">
-            <svg class="page-footer__logo" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="page-footer__logo" version="1.1" id="page-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                <g>
                  <path class="page-footer__logo--text" fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064
@@ -404,7 +460,7 @@
               </g>
             </svg>
           </a>
-          <div class="social-icons">
+          <div class="social-icons  social-icons--photo">
             <a class="social-icons__icon  social-icons__icon--tw" href="#">Twitter</a>
             <a class="social-icons__icon  social-icons__icon--fb" href="#">Facebook</a>
             <a class="social-icons__icon  social-icons__icon--you" href="#">YouTube</a>
@@ -412,7 +468,7 @@
           <div class="designed">
             <span class="designed__text">Разработано</span>
             <a class="designed__link" href="https://htmlacademy.ru/">
-              <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.0" id="designed__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
                 <path class="designed__svg" fill="#d22856" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
                 	l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5

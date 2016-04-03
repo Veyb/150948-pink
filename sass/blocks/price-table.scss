@@ -2,8 +2,8 @@
   text-transform: uppercase;
   border-collapse: collapse;
   position: absolute;
-  width: 270%;
-  left: -85%;
+  width: 260%;
+  left: -80%;
 
   &__string {
     background-color: $white;
@@ -88,8 +88,8 @@
     position: absolute;
     width: 31px;
     height: 26px;
-    top: 15px;
-    right: 48px;
+    top: 17px;
+    right: 14px;
 
     &--true {
       background: url('../img/icon-yes-green.svg') 0 50% no-repeat;
@@ -111,12 +111,20 @@
 
     &__header {
       padding: 10px 0;
+
+      &--hit {
+
+        &::after {
+          top: 2px;
+          left: 2px;
+        }
+      }
     }
     &__cell {
       font-size: 0;
       width: 125px;
       text-transform: none;
-      padding: 8px 15px;
+      padding: 7px 15px;
     }
 
     & td:first-child {
@@ -134,7 +142,7 @@
     }
 
     &__icon {
-      transform: translate(-10px, -5px);
+      transform: translate(-45px, -6px);
     }
   }
 }
@@ -147,6 +155,22 @@
       font-size: 18px;
     }
 
+    &__header {
+      padding: 18px 0;
+
+      &--hit {
+
+        &::after {
+          top: 6px;
+          left: 4px;
+        }
+      }
+    }
+
+    &__cell {
+      padding: 15px 20px;
+    }
+
     &__title {
       font-size: 18px;
     }
@@ -156,7 +180,7 @@
     }
 
     &__icon {
-      transform: translate(-50px, -5px);
+      transform: translate(-87px, 0);
     }
   }
 }

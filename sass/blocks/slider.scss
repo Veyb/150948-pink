@@ -129,12 +129,13 @@
     &__slide-info {
       display: block;
       order: 3;
-      margin-bottom: 33px;
+      margin-bottom: 36px;
     }
 
     &__slide-text {
       font-size: 18px;
       order: 1;
+      margin-bottom: 35px;
     }
   }
 }
@@ -152,12 +153,21 @@
       order: 2;
     }
 
+    &__slide-text {
+      margin-bottom: 37px;
+    }
+
+    &__slide-quotes {
+      display: none;
+    }
+
     &__slide-author {
       font-size: 24px;
     }
 
     &__slide-info {
       font-size: 18px;
+      margin-bottom: 0;
     }
 
     &__controls {
@@ -169,7 +179,7 @@
       opacity: 0.3;
       width: 22px;
       height: 42px;
-      margin-top: 25px;
+      margin-top: 27px;
 
       &:hover {
         opacity: 0.6;

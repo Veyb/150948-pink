@@ -1,7 +1,6 @@
 .download {
-  padding: 25px 0 29px;
+  padding: 24px 0 30px;
   color: $white;
-  // margin-top: auto;
   margin-top: 459px;
 
   &__btn {
@@ -9,7 +8,7 @@
     border: 3px solid $white;
     border-radius: 30px;
     padding: 17px 35px 15px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 
     &:hover {
       color: #d22856;
@@ -31,8 +30,8 @@
   .download {
     width: 300px;
     margin: 0;
-    padding-top: 35px;
-    padding-bottom: 108px;
+    padding-top: 31px;
+    padding-bottom: 110px;
 
     &__text {
       font-size: 18px;
@@ -40,7 +39,7 @@
     }
 
     &__btn {
-      margin-bottom: 46px;
+      margin-bottom: 48px;
     }
   }
 }
@@ -48,7 +47,7 @@
 @media #{$desktop-width} {
   .download {
     padding-top: 53px;
-    padding-bottom: 127px;
+    padding-bottom: 123px;
 
     &__btn {
       margin-bottom: 72px;

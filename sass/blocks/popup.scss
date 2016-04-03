@@ -31,7 +31,7 @@
   }
 
   &__footer {
-    padding-top: 50px;
+    padding: 50px 0;
     background-color: $cream;
   }
 
@@ -43,6 +43,10 @@
     padding: 18px 0 15px;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+    &--success {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -70,6 +74,23 @@
     }
     &__container {
       width: 310px;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .popup {
+
+    &--success {
+      width: 780px;
+    }
+
+    &--fail {
+      margin-left: -15%;
+    }
+
+    &__container--success {
+      width: 460px;
     }
   }
 }

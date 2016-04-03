@@ -5,11 +5,11 @@
 @media #{$table-width} {
   .effect {
     display: block;
-    padding-top: 58px;
-    padding-bottom: 55px;
+    padding-top: 53px;
+    padding-bottom: 58px;
 
     &__content {
-      min-height: 277px;
+      min-height: 267px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -19,6 +19,7 @@
       font-size: 14px;
       line-height: 24px;
       font-weight: 400;
+      padding-top: 15px;
 
       &::before {
         position: absolute;
@@ -33,7 +34,7 @@
 
       &::after {
         position: absolute;
-        top: 56px;
+        top: 60px;
         left: 18px;
         content: "24";
         text-align: center;
@@ -46,7 +47,7 @@
         height: 166px;
         border-radius: 50%;
         border: 14px solid #d22856;
-        background-color: $cream;
+        background-color: $white;
       }
     }
 
@@ -65,6 +66,10 @@
       margin-bottom: 10px;
     }
 
+    &__text-transfer {
+      display: none;
+    }
+
     &__link {
       margin: 0;
       color: #d22856;
@@ -75,14 +80,14 @@
 @media #{$desktop-width} {
   .effect {
     background-color: $cream;
-    padding-top: 70px;
+    padding-top: 67px;
     padding-bottom: 65px;
 
     &__content {
       width: 61%;
       min-height: 0;
-      padding-top: 97px;
-      padding-bottom: 45px;
+      padding-top: 94px;
+      padding-bottom: 48px;
 
       &::before {
         width: 298px;
@@ -117,6 +122,10 @@
 
       & br {
         display: none;
+      }
+
+      & .effect__text-transfer {
+        display: block;
       }
     }
 
