@@ -2,6 +2,12 @@
   font-size: 0;
   line-height: 0;
   text-decoration: none;
+  margin-right: 17px;
+
+  &--photo,
+  &--form {
+    margin-right: 0;
+  }
 
   &__icon {
     display: inline-block;
@@ -11,6 +17,15 @@
     border: 3px solid #e9ebec;
     border-radius: 50%;
     margin-right: 12px;
+
+    &:hover {
+      border: 3px solid $blue;
+    }
+
+    &:active {
+      border: 3px solid #e9ebec;
+      opacity: 0.3;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -26,6 +41,27 @@
 
     &--you {
       background: url('../img/icon-youtube.svg') no-repeat 50% 50% $white;
+    }
+  }
+}
+
+@media #{$table-width} {
+  .social-icons {
+
+    &--photo,
+    &--form {
+      margin-right: 17px;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .social-icons {
+
+    &--photo,
+    &--form {
+      margin-right: 0;
+      margin-left: 13px;
     }
   }
 }

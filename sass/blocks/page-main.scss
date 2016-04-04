@@ -4,6 +4,7 @@
     position: relative;
     background-color: $white;
     color: $blue;
+    padding-bottom: 6px;
   }
 
   &__intro-text {
@@ -14,7 +15,7 @@
 
     &--main {
       margin: 0;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       font-size: 24px;
       line-height: 1.3;
       font-weight: 300;
@@ -23,13 +24,18 @@
     &--photo {
       padding: 0 15px;
     }
+
+    &--form {
+      display: none;
+    }
   }
 }
 
 @media #{$table-width} {
   .page-main {
+
     &__intro {
-      padding-bottom: 30px;
+      padding-bottom: 48px;
     }
 
     &__intro-text {
@@ -44,7 +50,15 @@
       }
 
       &--form {
-        padding-top: 0;
+        display: inline;
+      }
+
+      &--photo {
+        padding-top: 45px;
+      }
+
+      &--photo br {
+        display: none;
       }
     }
   }
@@ -53,15 +67,24 @@
 @media #{$desktop-width} {
   .page-main {
 
+    &__intro {
+      padding-bottom: 77px;
+
+      &--form {
+        padding-bottom: 41px;
+      }
+    }
+
     &__intro-text {
+      padding-left: 80px;
+      padding-right: 80px;
 
       &--main {
         font-size: 50px;
       }
 
-      &--photo {
-        padding-left: 25%;
-        padding-right: 25%;
+      &--photo br {
+        display: block;
       }
     }
   }

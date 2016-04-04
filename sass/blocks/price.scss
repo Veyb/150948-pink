@@ -1,12 +1,52 @@
 .price {
   background-color: $cream;
-  padding-top: 35px;
+  padding-top: 95px;
   padding-bottom: 47px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 30px;
+    background-image: linear-gradient(to top left, $cream 50%, $white 50%);
+  }
 
   &__table {
     position: relative;
-    margin: 0 auto 40px;
+    margin: 0 auto 41px;
     min-height: 281px;
     overflow: hidden;
+    z-index: 2;
+  }
+}
+
+@media #{$table-width} {
+  .price {
+    padding-top: 90px;
+    padding-bottom: 64px;
+
+    &::before {
+      height: 55px;
+    }
+
+    &__table {
+      margin: 0 auto;
+      min-height: 224px;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .price {
+    padding-top: 138px;
+    padding-bottom: 91px;
+
+    &::before {
+      height: 65px;
+    }
   }
 }

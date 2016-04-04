@@ -26,6 +26,14 @@
 
     border-bottom: 1px solid #000101;
     border-top: 1px solid #485461;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -48,6 +56,17 @@
       text-transform: none;
       line-height: 18px;
       font-weight: 400;
+      padding-top: 12px;
+
+      &:hover {
+        color: inherit;
+        border-bottom: 2px solid $white;
+        padding-bottom: 13px;
+      }
+
+      &:active {
+        border-bottom: none;
+      }
     }
   }
 }

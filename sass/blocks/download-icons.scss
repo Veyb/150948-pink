@@ -1,6 +1,6 @@
 .download-icons {
   font-size: 0px;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 
   &__icon {
     display: inline-block;
@@ -15,6 +15,7 @@
 
     &--apple {
       background: url('../img/logo-apple.svg') 0 50% no-repeat;
+      transform: translateY(-5px);
     }
 
     &--android {
@@ -29,6 +30,12 @@
 
 @media #{$table-width} {
   .download-icons {
-    padding-bottom: 38px;
+    padding-bottom: 34px;
+  }
+}
+
+@media #{$desktop-width} {
+  .download-icons {
+    padding-bottom: 50px;
   }
 }

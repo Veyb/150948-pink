@@ -7,13 +7,23 @@
     font-size: 14px;
     line-height: 18px;
     color: $blue;
-    margin-right: 15px;
+    margin-right: 11px;
+    margin-top: 5px;
   }
 
   &__link {
     display: inline-block;
     vertical-align: top;
     line-height: 0;
+
+    &:hover .designed__svg {
+        fill: #283645;
+    }
+
+    &:active .designed__svg {
+        fill: #283645;
+        opacity: 0.3;
+    }
   }
 }
 
@@ -21,5 +31,15 @@
   .designed {
     margin: 0;
     padding: 0;
+    padding-top: 5px;
+  }
+}
+
+@media #{$desktop-width} {
+  .designed {
+
+    &__text {
+      font-size: 18px;
+    }
   }
 }

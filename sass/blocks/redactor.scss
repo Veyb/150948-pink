@@ -24,13 +24,32 @@
     padding: 15px 0 16px;
     background-color: inherit;
 
-    &:last-child {
-      margin-bottom: 0;
+    &:hover {
+      color: $white;
+      background-color: #d22856;
     }
 
-    &:disabled {
-      color: #e3e4e4;
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #d22856;
+    }
+
+    &--cancel {
+      margin-bottom: 0;
+      color: rgba(40, 54, 69, 0.1);
       border: 3px solid #dddfe0;
+
+      &:hover {
+        border: 3px solid #b5b9be;
+        color: rgba(40, 54, 69, 0.3);
+        background-color: inherit;
+      }
+
+      &:active {
+        border: 3px solid #b5b9be;
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #b5b9be;
+      }
     }
   }
 
@@ -41,17 +60,21 @@
     position: relative;
   }
 
-  &__tool--fill {
+  &__tool {
+    text-align: left;
     position: absolute;
     top: 42px;
+
+    &--active {
+      position: static;
+
+      & .redactor__icon-body {
+        fill: #d22856;
+      }
+    }
   }
 
-  &__tool--contrast {
-    position: absolute;
-    top: 42px;
-  }
-
-  &__icon {
+  &__link {
     font-size: 0;
     line-height: 0;
     text-decoration: none;
@@ -60,20 +83,25 @@
     margin-left: 36px;
     width: 48px;
     height: 48px;
-    background-color: transparent;
+
+    &:hover .redactor__icon-body {
+      fill: #8d949b;
+    }
 
     &--crop {
-      background: url('../img/icon-editor-crop.svg') no-repeat 0 50%;
+
     }
 
     &--fill {
-      background: url('../img/icon-editor-fill.svg') no-repeat 0 50%;
+      position: absolute;
       margin-left: 116px;
     }
 
     &--contrast {
-      background: url('../img/icon-editor-contrast.svg') no-repeat 0 50%;
+      position: absolute;
       margin-left: 204px;
+      height: 32px;
+      padding: 8px 0;
     }
   }
 
@@ -85,14 +113,29 @@
 @media #{$table-width} {
   .redactor {
 
+    &__image {
+      // width: 300px;
+      // height: 400px;
+    }
+
     &__btns {
       border-top: none;
       padding: 0;
-      padding-right: 18px;
+      padding-right: 13px;
       margin-top: auto;
     }
+
+    &__btn {
+      margin-bottom: 24px;
+
+      &--cancel {
+        margin-bottom: 0;
+      }
+    }
+
     &__upload {
-      width: 48.3%;
+      // width: 48.3%;
+      width: 300px;
       margin-right: auto;
     }
 
@@ -111,9 +154,11 @@
     &__tool {
       position: static;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #dddfe0;
+      text-align: center;
 
       &--fill,
       &--contrast {
@@ -121,14 +166,42 @@
       }
     }
 
-    &__icon {
-      background-size: cover;
+    &__link {
+      position: static;
       width: 24px;
       height: 24px;
       margin: 0;
       margin-right: auto;
+      margin-left: 3px;
       margin-top: 9px;
       align-self: flex-start;
+
+      &--crop {
+
+      }
+
+      &--fill {
+
+      }
+
+      &--contrast {
+        height: 16px;
+        padding: 4px 0;
+      }
+    }
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+
+      &--contrast {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &__icon-body {
+      fill: #d22856;
     }
 
     &__container {
@@ -146,11 +219,12 @@
     &__btns {
       display: flex;
       justify-content: space-between;
+      padding-right: 0;
     }
 
     &__btn {
       margin: 0;
-      width: 46.5%;
+      width: 44.5%;
     }
     &__manage {
       width: 410px;
@@ -161,14 +235,29 @@
       background-color: $cream;
       padding-left: 80px;
       padding-right: 60px;
-
     }
 
-    &__icon {
+    &__link {
       margin: 0;
       margin-right: 14px;
       width: 48px;
       height: 48px;
+
+      &--contrast {
+        height: 32px;
+        padding: 0;
+        padding-bottom: 16px;
+      }
+    }
+
+    &__icon {
+      width: 48px;
+      height: 48px;
+
+      &--contrast {
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 }

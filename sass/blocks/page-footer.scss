@@ -3,7 +3,11 @@
   padding-bottom: 41px;
 
   &--main {
-    padding-top: 45px;
+    padding-top: 41px;
+  }
+
+  &--photo {
+    padding-top: 39px;
   }
 
   &__logo {
@@ -13,6 +17,32 @@
     height: 41px;
     float: none;
     padding-bottom: 40px;
+
+    &--stars,
+    &--stars-glass {
+      display: none;
+    }
+
+    &:hover &--text,
+    &:hover &--stars {
+      fill: #d22856;
+    }
+
+    &:active &--text,
+    &:active &--stars {
+      fill: #283645;
+      opacity: 0.3;
+    }
+
+    &:active &--stars {
+      fill: #d22856;
+      opacity: 0.3;
+    }
+
+    &:active &--glass,
+    &:active &--stars-glass {
+      opacity: 0.3;
+    }
   }
 
   &__footer--main {
@@ -22,6 +52,10 @@
 
 @media #{$table-width} {
   .page-footer {
+
+    &--main {
+      padding-top: 44px;
+    }
 
     &--photo {
       padding-top: 0;
@@ -47,7 +81,43 @@
     &__logo {
       margin: 0;
       padding: 0;
-      align-self: flex-start;
+      align-self: center;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .page-footer {
+
+    &--main {
+      padding-top: 61px;
+    }
+
+    &--photo {
+      padding-top: 65px;
+    }
+
+    &__footer {
+
+      &--main {
+        padding-top: 73px;
+      }
+
+      &--form {
+        padding-top: 23px;
+      }
+    }
+
+    &__logo {
+
+      &--glass {
+        display: none;
+      }
+
+      &--stars,
+      &--stars-glass {
+        display: block;
+      }
     }
   }
 }

@@ -1,14 +1,17 @@
 .range-control {
   display: none;
-  // width: 86%;
   width: 240px;
   position: relative;
   padding: 0 20px;
   background: transparent;
   overflow:hidden;
 
-  &--crop {
+  &--active {
     display: block;
+  }
+
+  &--crop {
+
   }
 
   &--fill {
@@ -20,7 +23,7 @@
   }
 
   &__scale {
-    margin-top: 39px;
+    margin-top: 35px;
     margin-bottom: 34px;
     height: 2px;
     background: $blue;
@@ -28,26 +31,30 @@
 
   &__toggle {
     position: absolute;
-    top: 33px;
-    left: 5%;
+    top: 29px;
+    left: 0;
     width: 10px;
     height:10px;
     border: 2px solid #d22856;
     background: $cream;
     cursor:pointer;
     border-radius: 50%;
-    transform: translateX(0%);
+    transform: translateX(20px);
+
+    &:active {
+      background: #d22856;
+    }
 
     &--crop {
-      transform: translateX(1100%);
+      left: 69%;
     }
 
     &--fill {
-      transform: translateX(30px);
+      left: 15%;
     }
 
     &--contrast {
-      transform: translateX(110px);
+      left: 45%;
     }
   }
 }
@@ -72,7 +79,6 @@
 @media #{$desktop-width} {
   .range-control {
     flex-grow: 1;
-    // width: 61.5%;
     padding: 0 30px;
   }
 }
