@@ -16,9 +16,6 @@ var uglify = require("gulp-uglify");
 var copy = require("gulp-copy");
 var clean = require("gulp-contrib-clean");
 
-var fs = require("fs");
-var css = fs.readFileSync("css/style.css", "utf8");
-
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())

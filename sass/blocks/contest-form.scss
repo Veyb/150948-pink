@@ -158,8 +158,19 @@
 
     &--radio {
 
+      &:active::before {
+        background: url('../img/icon-map-marker.svg') 50% 50% no-repeat $white;
+      }
+
       &::before {
         border-radius: 50%;
+      }
+    }
+
+    &--checkbox {
+
+      &:active::before {
+        background: url('../img/icon-yes.svg') 50% 50% no-repeat $white;
       }
     }
   }
@@ -210,8 +221,16 @@
   background: url('../img/icon-map-marker.svg') 50% 50% no-repeat $white;
 }
 
+.contest-form__radio:checked + .contest-form__choose-label--radio:active::before {
+  background: none;
+}
+
 .contest-form__checkbox:checked + .contest-form__choose-label--checkbox::before {
   background: url('../img/icon-yes.svg') 50% 50% no-repeat $white;
+}
+
+.contest-form__checkbox:checked + .contest-form__choose-label--checkbox:active::before {
+  background: none;
 }
 
 @media #{$table-width} {
