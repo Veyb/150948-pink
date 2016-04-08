@@ -23,10 +23,10 @@
     &--photo {
       padding: 0 15px;
     }
+  }
 
-    &--form {
-      display: none;
-    }
+  &__intro-hidden-text {
+    display: none;
   }
 }
 
@@ -48,10 +48,6 @@
         line-height: 1.2;
       }
 
-      &--form {
-        display: inline;
-      }
-
       &--photo {
         padding-top: 45px;
       }
@@ -59,6 +55,10 @@
       &--photo br {
         display: none;
       }
+    }
+
+    &__intro-hidden-text {
+      display: inline;
     }
   }
 }
