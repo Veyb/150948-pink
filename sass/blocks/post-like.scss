@@ -8,12 +8,13 @@
   &__icon {
     display: inline-block;
     text-decoration: none;
-    vertical-align: center;
+    vertical-align: baseline;
     line-height: 0;
   }
 
   &__link {
     display: inline-block;
+    vertical-align: baseline;
     padding-left: 18px;
     padding-right: 4px;
     font-size: 12px;
@@ -23,6 +24,7 @@
 
   &__count {
     display: inline-block;
+    vertical-align: baseline;
     font-size: 12px;
     line-height: 24px;
   }

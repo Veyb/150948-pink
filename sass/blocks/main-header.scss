@@ -9,15 +9,17 @@
 
   &__logo {
 
-    &--glass {
-      display: none;
-    }
-
-    &--stars,
-    &--stars-glass {
-      display: none;
-    }
   }
+
+  &__logo-glass {
+    display: none;
+  }
+
+  &__logo-stars,
+  &__logo-stars-glass {
+    display: none;
+  }
+
 
   &__container {
     min-height: 69px;
@@ -119,13 +121,14 @@
 
     &__logo {
 
-      &--text {
-        display: none;
-      }
+    }
 
-      &--glass {
-        display: block;
-      }
+    &__logo-text {
+      display: none;
+    }
+
+    &__logo-glass {
+      display: block;
     }
   }
 }
@@ -139,14 +142,15 @@
 
     &__logo {
 
-      &--stars,
-      &--stars-glass {
-        display: block;
-      }
+    }
 
-      &--glass {
-        display: none;
-      }
+    &__logo-stars,
+    &__logo-stars-glass {
+      display: block;
+    }
+
+    &__logo-glass {
+      display: none;
     }
   }
 }
